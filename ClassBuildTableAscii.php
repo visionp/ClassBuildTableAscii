@@ -1,7 +1,7 @@
 <?php 
 
 
-Class ClassBuildTableAascii {
+Class ClassBuildTableAscii {
 
 	public $newLineDelimiter = "<br>";
 	public $topBorderDelimiter = "-";
