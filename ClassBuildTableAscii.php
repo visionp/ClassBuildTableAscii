@@ -27,8 +27,23 @@ Class ClassBuildTableAscii {
 	}
 
 
+	public function asHtml() {
+		$html = '<span style="font-family:Courier;">';
+		$html .= $this->build();
+		$html .= "</span>";
+		return $html;
+	}
+
+
+	public function asText() {
+		$this->newLineDelimiter = "\r\n";
+		$this->space = " ";
+		return $this->build();
+	}
+
+
 	/*строим таблицу*/
-	public function build() {
+	protected function build() {
 		$html = $this->border();
 		$html .= $this->getHead();
 		foreach($this->data as $d) {
