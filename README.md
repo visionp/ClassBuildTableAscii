@@ -1,8 +1,8 @@
 Simple class for build table ascii style.
-Example:
+Example (http://prntscr.com/94llur):
 ```
 <?php 
-require_once('ClassBuildTableAascii.php'); 
+require_once('ClassBuildTableAscii.php'); 
 
 $data = array (
  array (
@@ -27,13 +27,13 @@ $data = array (
 );
 
 /*
-	public $newLineDelimiter = "<br>";
-	public $topBorderDelimiter = "-";
-	public $sideDelimiter = "|";
-	public $space = "&nbsp;";
-	public $angle = "+";
+    public $newLineDelimiter = "<br>";
+    public $topBorderDelimiter = "-";
+    public $sideDelimiter = "|";
+    public $space = "&nbsp;";
+    public $angle = "+";
 */
-$table = new ClassBuildTableAascii($data);
+$table = new ClassBuildTableAscii($data);
 
 
 echo $table->asHtml();
